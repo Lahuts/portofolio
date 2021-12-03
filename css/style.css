@@ -8,7 +8,7 @@ body{
     font: 1.6rem sans-serif;
     margin: 0;  
 }
-h1,h2,h3,h4,p,ol{
+h1,h2,h3,h4,p,ul,main{
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -19,3 +19,45 @@ h1,h2{
 a{text-decoration: none;}
 
 /*theme*/
+main{
+    
+}
+header{
+background-color: rgb(255, 255, 255);
+
+}
+header{
+display: block;
+padding: 1em;
+background-color: blueviolet;
+color: #fff;
+}
+
+img{
+    width: 5rem;
+    height: 5rem;
+    float: left;
+}
+
+h1{
+text-align: center;
+}
+nav{
+    
+    background-color: rgb(59, 106, 235);
+    text-align: center;
+    margin-top: 0.1rem;
+    padding: 2rem;
+}
+ul{
+    width: 100%;
+    padding: 1rem;
+}
+
+li{
+    float: left;
+    padding-left: 3rem;
+}
+li>a{
+    color: #fff;
+}
