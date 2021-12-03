@@ -15,18 +15,19 @@
   </head>
   <body>
     <header>
-      <img src="asset/FAVICON.ico" alt="logo AH"/>
-      <h1>Alexis Huet Développeur</h1>
-      <nav>
-        <ol>
-          <li><a href="#">Compétences</a></li>
-          <li><a href="#">Logiciel/Ide</a></li>
-          <li><a href="#">Expériences</a></li>
-          <li><a href="#">Études</a></li>
-          <li><a href="#">Loisirs</a></li>
-        </ol>
-      </nav>
+      <a href="#"><img src="asset/FAVICON.ico" alt="logo AH"/></a>
+      <h1>Développeur</h1>
     </header>
+      <nav>
+        <ul>
+          <li><a href="#">Compétences</a></li>
+          <li><a href="#">Logiciel</a></li>
+          <li><a href="#">Expériences</a></li>
+
+        </ul>
+      </nav>
+
+    <main>
     <section>
       <h2>Compétences</h2>
       <ol>
@@ -56,6 +57,7 @@
         similique expedita repudiandae id sit est architecto?
       </p>
     </section>
+</main>
     <footer>
       <p>
         &copy; -<a href="mailto:alexis.huet.m@gmail.com">Alexis Huet</a> - 2021
@@ -63,4 +65,5 @@
     </footer>
   </body>
 </html>
+
 ```
