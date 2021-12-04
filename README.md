@@ -67,3 +67,102 @@
 </html>
 
 ```
+
+## css style pour l'index
+```css
+/* 
+reset css
+*/
+html {
+  font-size: 62.5%;
+}
+body {
+  font: 1.6rem sans-serif;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+main,
+nav {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+h1,
+h2 {
+  font-weight: normal;
+}
+a {
+  text-decoration: none;
+}
+
+/*theme*/
+
+header {
+  padding: 1em;
+  background-color: rgb(137, 35, 233);
+  color: #fff;
+}
+main {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+header>a>img {
+  width: 5rem;
+  height: 5rem;
+  float: left;
+}
+
+h1 {
+  text-align: center;
+}
+nav {
+  background-color: rgb(59, 106, 235);
+}
+nav > ol {
+  padding: 1.5rem;
+}
+
+nav > ol > li {
+  display: inline-block;
+  padding-left: 4rem;
+}
+li > a {
+  color: #fff;
+}
+section > h2 {
+  margin-top: 2rem;
+  padding-left: 2rem;
+  background-color: rgb(103, 51, 155);
+  color: #fff;
+  padding: 0.7rem;
+}
+section > ol {
+  margin-top: 0.5em;
+}
+section > p {
+  border: black solid 3px;
+  margin-top: 1em;
+  padding: 2em;
+}
+
+footer {
+  margin-top: 4rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+footer {
+  color: black;
+  font-weight: bold;
+}
+footer > p > a {
+  color: black;
+}
+
+```
