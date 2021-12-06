@@ -72,11 +72,12 @@
     </main>
     <footer>
       <p>
-        &copy; -<a href="mailto:alexis.huet.m@gmail.com">Alexis Huet</a> - 2021
+        &copy; - Portofolio -<a href="mailto:alexis.huet.m@gmail.com" alt="contact mail Alexis Huet">Alexis Huet</a> - 2021
       </p>
     </footer>
   </body>
 </html>
+
 
 
 ```
@@ -166,7 +167,7 @@ section > p {
 }
 
 footer {
-  margin-top: 4rem;
+  margin-top: 10rem;
   text-align: center;
   margin-bottom: 4rem;
 }
@@ -177,5 +178,6 @@ footer {
 footer > p > a {
   color: black;
 }
+
 
 ```
