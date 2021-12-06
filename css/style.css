@@ -17,6 +17,7 @@ p,
 ul,
 ol,
 main,
+figure,
 nav {
   margin: 0;
   padding: 0;
@@ -32,10 +33,17 @@ a {
 
 /*theme*/
 
+:root{
+  --primary--color:rgb(3, 33, 129);
+  --secondary--color:rgb(59, 106, 235);
+  --font-color-primary:#000;
+  --font-color-secondary:#fff;
+}
+
 header {
   padding: 1em;
-  background-color: rgb(137, 35, 233);
-  color: #fff;
+  background-color: var(--primary--color);
+  color: var(--font-color-secondary)
 }
 main {
   padding-left: 6rem;
@@ -51,7 +59,7 @@ h1 {
   text-align: center;
 }
 nav {
-  background-color: rgb(59, 106, 235);
+  background-color: var(--secondary--color);
 }
 nav > ol {
   padding: 1.5rem;
@@ -62,20 +70,43 @@ nav > ol > li {
   padding-left: 4rem;
 }
 li > a {
-  color: #fff;
+  color: var(--font-color-secondary)
 }
 section > h2 {
   margin-top: 2rem;
   padding-left: 2rem;
-  background-color: rgb(103, 51, 155);
-  color: #fff;
+  background-color: var(--secondary--color);
+  color:var(--font-color-secondary);
   padding: 0.7rem;
+}
+section:nth-child(2)>div{
+  padding: 1.0rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+}
+figure{
+  width: 100px;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 2rem;
+}
+figure>img{
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin-left: 2rem;
 }
 section > ol {
   margin-top: 0.5em;
 }
 section > p {
-  border: black solid 3px;
+  border: #000 solid 3px;
+  margin-top: 1em;
+  padding: 2em;
+}
+section>ul{
+  border: solid var(--font-color-primary) 3px;
   margin-top: 1em;
   padding: 2em;
 }
@@ -86,9 +117,9 @@ footer {
   margin-bottom: 4rem;
 }
 footer {
-  color: black;
+  color: var(--font-color-primary);
   font-weight: bold;
 }
 footer > p > a {
-  color: black;
+  color: var(--font-color-primary);
 }
