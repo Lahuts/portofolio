@@ -1,6 +1,7 @@
 /* 
 reset css
 */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 html {
   font-size: 62.5%;
 }
@@ -9,23 +10,15 @@ body {
   margin: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-p,
-ul,
-ol,
-main,
-figure,
+h1,h2,h3,h4,p,ul,ol,main,figure,
 nav {
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
-h1,
-h2 {
   font-weight: normal;
+}
+h1,h2 {
+  font-weight: 100;
 }
 a {
   text-decoration: none;
@@ -33,33 +26,42 @@ a {
 
 /*theme*/
 
+
+
 :root{
-  --primary--color:rgb(3, 33, 129);
-  --secondary--color:rgb(59, 106, 235);
+  --primary--color:#1d1d1d;
+  --secondary--color:rgb(92, 128, 228);
   --font-color-primary:#000;
   --font-color-secondary:#fff;
 }
+body{
+  background-color: var(--primary--color);
+  color: #fff;
+}
 
 header {
+  padding-top: 1rem;
   padding: 1em;
   background-color: var(--primary--color);
-  color: var(--font-color-secondary)
+  color: var(--font-color-secondary);
+  overflow: hidden;
 }
 main {
-  padding-left: 6rem;
-  padding-right: 6rem;
+  font-family: 'Open Sans'sans-serif;
+  
+  
 }
-header>a>img {
-  width: 5rem;
-  height: 5rem;
-  float: left;
+header>div>a>img {
+  width: 10rem;
+  height: 10rem;
 }
 
 h1 {
   text-align: center;
 }
 nav {
-  background-color: var(--secondary--color);
+  text-align: center;
+
 }
 nav > ol {
   padding: 1.5rem;
@@ -67,17 +69,29 @@ nav > ol {
 
 nav > ol > li {
   display: inline-block;
-  padding-left: 4rem;
+}
+nav>ol>li>a{
+  display: flex;
+  flex-direction: column;
+
 }
 li > a {
-  color: var(--font-color-secondary)
+  border: #fff 0px ;
+  padding: 1.5rem;
+  color: var(--font-color-secondary);
+}
+li>a>img{
+  height: 10rem;
+  width: 10rem;
 }
 section > h2 {
   margin-top: 2rem;
-  padding-left: 2rem;
   background-color: var(--secondary--color);
   color:var(--font-color-secondary);
   padding: 0.7rem;
+
+  text-align: left;
+  padding-left: 5rem;
 }
 section:nth-child(2)>div{
   padding: 1.0rem;
@@ -101,12 +115,10 @@ section > ol {
   margin-top: 0.5em;
 }
 section > p {
-  border: #000 solid 3px;
   margin-top: 1em;
   padding: 2em;
 }
 section>ul{
-  border: solid var(--font-color-primary) 3px;
   margin-top: 1em;
   padding: 2em;
 }
@@ -117,9 +129,102 @@ footer {
   margin-bottom: 4rem;
 }
 footer {
-  color: var(--font-color-primary);
+  color: var(--font-color-secondary);
   font-weight: bold;
 }
 footer > p > a {
-  color: var(--font-color-primary);
+  color: var(--font-color-secondary);
+}
+
+/* Test css Animation*/
+
+
+.wrapper {
+  height: 70vh;
+  /*This part is important for centering*/
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  justify-content: flex-start;
+}
+
+.text {
+  width: 46ch;
+  animation: typing 2s steps(32), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+  justify-self: center;
+}
+header>div>a{
+  margin-bottom: 10rem;
+  margin-top: 19rem;
+}
+
+
+/*Test  animation */
+@media screen and (max-width: 800px) {
+
+  main{
+    padding: 0px;
+    
+  }
+
+  section:nth-child(2)>div{
+    margin: 0;
+    width: 2rem;
+    padding: 0.25rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 0.25rem;
+  }
+  nav{
+    display: none;
+  }
+
+  .wrapper {
+    height: 100vh;
+    /*This part is important for centering*/
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-flow: column;
+  }
+
+  .text {
+    width: 26ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 1em;
+  }
+ 
+}
+
+
+
+/* La animation d'ecriture */
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+/* La barre */
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+  
+}
+#competence,#ide,#experience{
+  display: none;
+}
+#competence,#ide,#experience:target{
+  display: block;
+  animation: scroll;
+  transition: 2s;
 }

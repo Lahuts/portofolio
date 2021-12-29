@@ -17,7 +17,7 @@
   <body>
     <header>
       <a href="#"><img src="asset/FAVICON.ico" alt="logo AH" /></a>
-      <h1>Développeur</h1>
+      <h1>Développeur Front & Back</h1>
     </header>
     <nav>
       <ol>
@@ -38,12 +38,12 @@
       </section>
       <section>
         <h2>Logiciel / IDE</h2>
-        <ol>
-          <li>Html</li>
-          <li>Css</li>
-          <li>Java</li>
-          <li>C#</li>
-        </ol>
+        <div>
+          <figure><img src="asset/CSHARP.png" alt="Logo C Sharp"></figure>
+        <figure><img src="asset/CSS.png" alt="Logo Css"></figure>
+        <figure><img src="asset/HTML5.png" alt="Logo html"></figure>
+        <figure><img src="asset/JAVA.png" alt="Logo JAVA"></figure>
+      </div>
       </section>
       <section>
         <h2>Experiences</h2>
@@ -55,11 +55,12 @@
       </section>
       <section>
         <h2>Études</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iure
-          laudantium, quod iusto quis amet. Aperiam aut dicta, nemo provident
-          ipsam velit cum tempore explicabo.
-        </p>
+        <ul>
+          <li>2019 : Lorem ipsum dolor sit.</li>
+          <li>2018 : Lorem ipsum dolor sit.</li>
+          <li>2017 : Lorem ipsum dolor sit.</li>
+          <li>2016: Lorem ipsum dolor sit.</li>
+        </ul>
       </section>
       <section>
         <h2>Loisirs</h2>
@@ -72,11 +73,12 @@
     </main>
     <footer>
       <p>
-        &copy; - Portofolio -<a href="mailto:alexis.huet.m@gmail.com" alt="contact mail Alexis Huet">Alexis Huet</a> - 2021
+        &copy; - Portofolio -<a href="mailto:alexis.huet.m@gmail.com" >Alexis Huet</a> - 2021
       </p>
     </footer>
   </body>
 </html>
+
 
 
 
@@ -103,6 +105,7 @@ p,
 ul,
 ol,
 main,
+figure,
 nav {
   margin: 0;
   padding: 0;
@@ -118,10 +121,17 @@ a {
 
 /*theme*/
 
+:root{
+  --primary--color:rgb(3, 33, 129);
+  --secondary--color:rgb(59, 106, 235);
+  --font-color-primary:#000;
+  --font-color-secondary:#fff;
+}
+
 header {
   padding: 1em;
-  background-color: rgb(137, 35, 233);
-  color: #fff;
+  background-color: var(--primary--color);
+  color: var(--font-color-secondary)
 }
 main {
   padding-left: 6rem;
@@ -137,7 +147,7 @@ h1 {
   text-align: center;
 }
 nav {
-  background-color: rgb(59, 106, 235);
+  background-color: var(--secondary--color);
 }
 nav > ol {
   padding: 1.5rem;
@@ -148,20 +158,43 @@ nav > ol > li {
   padding-left: 4rem;
 }
 li > a {
-  color: #fff;
+  color: var(--font-color-secondary)
 }
 section > h2 {
   margin-top: 2rem;
   padding-left: 2rem;
-  background-color: rgb(103, 51, 155);
-  color: #fff;
+  background-color: var(--secondary--color);
+  color:var(--font-color-secondary);
   padding: 0.7rem;
+}
+section:nth-child(2)>div{
+  padding: 1.0rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+}
+figure{
+  width: 100px;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 2rem;
+}
+figure>img{
+  display: block;
+  width: 10rem;
+  height: 10rem;
+  margin-left: 2rem;
 }
 section > ol {
   margin-top: 0.5em;
 }
 section > p {
-  border: black solid 3px;
+  border: #000 solid 3px;
+  margin-top: 1em;
+  padding: 2em;
+}
+section>ul{
+  border: solid var(--font-color-primary) 3px;
   margin-top: 1em;
   padding: 2em;
 }
@@ -172,12 +205,11 @@ footer {
   margin-bottom: 4rem;
 }
 footer {
-  color: black;
+  color: var(--font-color-primary);
   font-weight: bold;
 }
 footer > p > a {
-  color: black;
+  color: var(--font-color-primary);
 }
-
 
 ```
