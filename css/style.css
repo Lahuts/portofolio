@@ -10,7 +10,7 @@ body {
   margin: 0;
 }
 
-h1,h2,h3,h4,p,ul,ol,main,figure,
+h1,h2,h3,h4,p,ul,ol,main,
 nav {
   margin: 0;
   padding: 0;
@@ -90,7 +90,7 @@ section > h2 {
   color:var(--font-color-secondary);
   padding: 0.7rem;
 
-  text-align: left;
+  text-align: center;
   padding-left: 5rem;
 }
 section:nth-child(2)>div{
@@ -110,6 +110,12 @@ figure>img{
   width: 10rem;
   height: 10rem;
   margin-left: 2rem;
+}
+
+figcaption{
+  padding-top: 1em;
+  padding-left: 2.2em;
+  text-align: center;
 }
 section > ol {
   margin-top: 0.5em;
@@ -136,6 +142,18 @@ footer {
 }
 footer > p > a {
   color: var(--font-color-secondary);
+}
+
+
+#experience{
+  padding: 4.0rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+#experience>p{
+  text-align: center;
+  line-height: 1.6em;
 }
 
 /* Test css Animation*/
