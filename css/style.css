@@ -184,6 +184,7 @@ header>div>a{
 }
 
 
+
 /*Test  animation */
 @media screen and (max-width: 800px) {
 
@@ -224,6 +225,19 @@ header>div>a{
     display: none;
   }
 
+  #grid-ide{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+
+  #experience{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+  }
+
   .wrapper {
     height: 70vh;
     /*This part is important for centering*/
@@ -242,11 +256,6 @@ header>div>a{
     font-family: monospace;
     font-size: 0.7em;
   }
- 
-}
-
-
-
 /* L' animation d'ecriture */
 @keyframes typing {
   from {
@@ -265,4 +274,5 @@ header>div>a{
   display: block;
   animation: scroll;
   transition: 2s;
+}
 }
