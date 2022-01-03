@@ -30,7 +30,7 @@ a {
 
 :root{
   --primary--color:#1d1d1d;
-  --secondary--color:rgb(92, 128, 228);
+  --secondary--color:rgb(92,128,228);
   --font-color-primary:#000;
   --font-color-secondary:#fff;
 }
@@ -183,6 +183,12 @@ header>div>a{
   margin-top: 18rem;
 }
 
+nav>ol>li>a:hover{
+
+  filter: invert(48%) sepia(21%) saturate(1365%) hue-rotate(187deg) brightness(100%) contrast(100%);
+  color:var(--secondary--color);
+}
+
 
 
 /*Test  animation */
@@ -233,6 +239,7 @@ header>div>a{
   }
 
   #experience{
+    margin: 0px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 1rem;
